@@ -1,0 +1,152 @@
+export type Product = {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice?: number;
+  rating: number;
+  reviewCount: number;
+  image: string;
+  category: string;
+  badge?: "Featured" | "Sale" | "New";
+  description: string;
+};
+
+export const CATEGORIES = ["All", "Electronics", "Clothing", "Home", "Sports", "Beauty"];
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 1,
+    name: "Wireless Noise-Cancelling Headphones",
+    price: 79.99,
+    originalPrice: 129.99,
+    rating: 4.8,
+    reviewCount: 2341,
+    image: "https://m.media-amazon.com/images/I/71YM2N5whtL.jpg",
+    category: "Electronics",
+    badge: "Sale",
+    description: "Premium sound with active noise cancellation and 30-hour battery life.",
+  },
+  {
+    id: 2,
+    name: "Minimalist Leather Watch",
+    price: 149.00,
+    rating: 4.7,
+    reviewCount: 876,
+    image: "https://www.peugeotwatches.com/cdn/shop/products/2059G-FV.jpg?v=1633106380&width=1500",
+    category: "Clothing",
+    badge: "Featured",
+    description: "Slim profile with genuine leather strap and sapphire crystal glass.",
+  },
+  {
+    id: 3,
+    name: "Smart Fitness Tracker",
+    price: 59.99,
+    originalPrice: 89.99,
+    rating: 4.5,
+    reviewCount: 1543,
+    image: "https://m.media-amazon.com/images/I/61RADUe94LL.jpg",
+    category: "Electronics",
+    badge: "Sale",
+    description: "Track steps, heart rate, sleep, and more with a 7-day battery.",
+  },
+  {
+    id: 4,
+    name: "Merino Wool Crewneck Sweater",
+    price: 89.00,
+    rating: 4.6,
+    reviewCount: 432,
+    image: "https://brooksbrothers.bynder.com/match/WebName/MS01285_BLACK/ULTIMATE_MERINO_WOOL_CREWNECK_SWEATER_BLACK",
+    category: "Clothing",
+    badge: "New",
+    description: "Ultra-soft 100% merino wool, perfect for layering in any season.",
+  },
+  {
+    id: 5,
+    name: "Portable Bluetooth Speaker",
+    price: 49.99,
+    originalPrice: 69.99,
+    rating: 4.4,
+    reviewCount: 987,
+    image: "https://cdn.thewirecutter.com/wp-content/media/2024/11/portablebluetoothspeakers-2048px-9130.jpg?width=2048&quality=60&crop=2048:1365&auto=webp",
+    category: "Electronics",
+    badge: "Sale",
+    description: "360° surround sound, waterproof IPX7, and 12-hour playtime.",
+  },
+  {
+    id: 6,
+    name: "Ceramic Pour-Over Coffee Set",
+    price: 64.00,
+    rating: 4.9,
+    reviewCount: 312,
+    image: "https://m.media-amazon.com/images/I/7159+ELcEOL._AC_UF894,1000_QL80_.jpg",
+    category: "Home",
+    badge: "Featured",
+    description: "Handcrafted ceramic dripper with matching carafe and filters included.",
+  },
+  {
+    id: 7,
+    name: "Yoga Mat Pro",
+    price: 45.00,
+    rating: 4.7,
+    reviewCount: 2109,
+    image: "https://outdoorgearlab.b-cdn.net/photos/28/55/406987_31709_XL.jpg",
+    category: "Sports",
+    description: "Non-slip surface, 6mm thick, eco-friendly TPE material.",
+  },
+  {
+    id: 8,
+    name: "Vitamin C Brightening Serum",
+    price: 38.00,
+    originalPrice: 52.00,
+    rating: 4.6,
+    reviewCount: 1876,
+    image: "https://m.media-amazon.com/images/I/71cFGPWHYoL._AC_UF1000,1000_QL80_.jpg",
+    category: "Beauty",
+    badge: "Sale",
+    description: "20% Vitamin C with hyaluronic acid for radiant, even-toned skin.",
+  },
+  {
+    id: 9,
+    name: "Mechanical Keyboard TKL",
+    price: 119.00,
+    rating: 4.8,
+    reviewCount: 654,
+    image: "https://m.media-amazon.com/images/I/81bxzOcOR3L.jpg",
+    category: "Electronics",
+    badge: "New",
+    description: "Compact tenkeyless layout with tactile brown switches and RGB backlight.",
+  },
+  {
+    id: 10,
+    name: "Linen Throw Blanket",
+    price: 55.00,
+    rating: 4.5,
+    reviewCount: 289,
+    image: "https://m.media-amazon.com/images/I/71EUmwZhM6L.jpg",
+    category: "Home",
+    description: "Stonewashed linen blend, breathable and perfect for all seasons.",
+  },
+  {
+    id: 11,
+    name: "Running Shoes Ultralight",
+    price: 99.00,
+    originalPrice: 135.00,
+    rating: 4.7,
+    reviewCount: 1432,
+    image: "https://hips.hearstapps.com/hmg-prod/images/run-lightweight-running-shoes-682b51023eccc.jpg?crop=0.670xw:1.00xh;0.0994xw,0&resize=1200:*",
+    category: "Sports",
+    badge: "Sale",
+    description: "Responsive foam midsole with breathable mesh upper for long runs.",
+  },
+  {
+    id: 12,
+    name: "Retinol Night Cream",
+    price: 42.00,
+    rating: 4.5,
+    reviewCount: 923,
+    image: "https://m.media-amazon.com/images/I/51z+zE2nFyL.jpg",
+    category: "Beauty",
+    badge: "Featured",
+    description: "Encapsulated retinol with peptides to reduce fine lines overnight.",
+  },
+];
